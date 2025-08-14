@@ -1,0 +1,185 @@
+.custom-space {
+    margin-top: 50px;
+  }
+/* Navbar and header fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+nav, header { animation: fadeIn 1s ease-in-out; }
+
+/* Carousel fade-in effect */
+.carousel-item { opacity: 0; transition: opacity 0.8s ease-in-out, transform 1s ease; }
+.carousel-item.active { opacity: 1; transform: translateX(0); }
+
+/* Card hover scaling effect */
+.course-item { transform: scale(1); transition: transform 0.3s ease-in-out; }
+.course-item:hover { transform: scale(1.05); }
+
+/* Button hover zoom-in effect */
+.btn-primary, .btn-secondary { transition: transform 0.3s ease-in-out; }
+.btn-primary:hover, .btn-secondary:hover { transform: scale(1.1); }
+
+/* Bounce animation for the Subscribe button */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+.btn-primary { animation: bounce 2s infinite; }
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+
+/* Global Background and Text Colors */
+body {
+  
+  color: #333333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Customization */
+/* Navbar Styling */
+nav {
+  background-color: #00457C; /* Navy Blue background */
+}
+
+nav .nav-link {
+  color: #FFFFFF !important; /* White text color for links */
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+nav .nav-link:hover {
+  color: #F4D35E !important; /* Golden Yellow on hover */
+}
+
+nav .dropdown-menu {
+  background-color: #00457C; /* Navy Blue background for dropdown */
+  border: none; /* Remove border from dropdown */
+}
+
+nav .dropdown-menu .dropdown-item {
+  color: #FFFFFF; /* White text in dropdown */
+}
+
+nav .dropdown-menu .dropdown-item:hover {
+  background-color: #F4D35E; /* Golden Yellow background on hover */
+  color: #00457C; /* Navy text color when hovered */
+}
+
+/* Dropdown button styling */
+nav .dropdown-toggle {
+  background-color: #006494; /* Lighter Blue for dropdown button */
+  color: #FFFFFF;
+  border: none;
+}
+
+nav .dropdown-toggle:hover {
+  background-color: #003366; /* Darker Navy on hover */
+}
+
+/* Custom CSS for the navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+}
+
+
+/* Buttons */
+.btn-primary {
+  background-color: #006494; /* Secondary Color */
+  border: none;
+  color: #FFFFFF; /* White text */
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #003366; /* Darker Navy Blue on hover */
+}
+
+.btn-secondary {
+  background-color: #F4D35E; /* Accent Color */
+  border: none;
+  color: #00457C; /* Primary Color for text */
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #D4B22E; /* Slightly darker gold for hover */
+  color: #FFFFFF; /* White text */
+}
+
+/* Carousel Text */
+.carousel-caption h1 {
+  color: #FFFFFF; /* White text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for readability */
+}
+
+.carousel-caption p {
+  color: #fcfbfb; /* Accent Color */
+}
+
+/* Cards (Useful Links Section) */
+.course-item {
+  background-color: #FFFFFF; /* White background */
+  border: 1px solid #EEEEEE; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  transition: box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.course-item h5 {
+  color: #00457C; /* Primary Color */
+}
+
+
+footer a {
+  color: #F4D35E; /* Accent Color for links */
+}
+
+footer a:hover {
+  color: #FFFFFF; /* White on hover */
+}
+
+/* Featurettes */
+.featurette-heading {
+  color: #00457C; /* Primary Color */
+}
+
+.featurette p {
+  color: #333333; /* Dark gray text */
+}
+
+hr.featurette-divider {
+  border-color: #00457C; /* Primary color for horizontal rules */
+}
+
+/* Customize icons in the footer */
+footer ul li a img {
+  filter: brightness(0) invert(1); /* Ensures white icons */
+}
+
+footer ul li a:hover img {
+  filter: none; /* Original color on hover */
+}
+footer {
+  width: 100%;
+  background-color: #00457C; /* Adjust with your desired color */
+  color: #FFFFFF;
+}
+
+footer .container {
+  max-width: 1200px; /* Ensures the content inside stays centered */
+  margin: 0 auto;
+  padding: 0 15px; /* Adds padding inside the footer */
+}
+
+
+
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for visibility */
+}

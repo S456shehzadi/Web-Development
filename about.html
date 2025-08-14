@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punjab University Gujranwala Campus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+             
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 60px 0;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            background-size: cover; /* Cover the entire screen */
+            background-position: center; /* Center the image */
+            height: 100%; /* Full height */
+             
+        }
+
+        .about-section h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            margin: 0 auto;
+            max-width: 800px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Contacts Section */
+        .contact-section {
+            margin-top: 30px;
+        }
+
+        .contact-card {
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card img:hover {
+            transform: scale(1.1);
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info h5 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .contact-info p {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .contact-info a {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Contact Us Section */
+        .contact-us-section {
+            background-color: #f1f1f1;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact-us-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-us-section p {
+            font-size: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+         
+    .contact-us-section {
+        margin-top: 50px;
+    }
+
+    .map {
+        margin-top: 20px; /* Space between contact info and map */
+    }
+    </style>
+     
+    
+</head>
+<body>
+   <div> 
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #00457C;">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#" style="padding-left: 50px;">University of the Punjab Gujranwala Campus, Gujranwala</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding-right: 150px;"> <!-- Added justify-content-end -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.php">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Login
+              </a>
+              <div class="dropdown-menu p-4" style="min-width: 250px;">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+  
+    <div class="container custom-space">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="./assets/images/logo.png" alt="logo" class="bi me-2" width="40" height="45">
+        </a>
+         
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="./events.html" class="nav-link active" aria-current="page">Events</a></li>
+          <li class="nav-item"><a href="./gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link">About us</a></li>
+           
+          <li class="nav-item"><a href="./notice.html" class="nav-link">Notice Board</a></li>
+          <li class="nav-item"><a href="./societies.html" class="nav-link">Societies</a></li>
+          <li class="nav-item"><div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Departments
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="./departments/it.html">Information Technology</a></li>
+               
+               
+              <li><a class="dropdown-item" href="./departments/banking.html">Banking & Finance</a></li>
+              <li><a class="dropdown-item" href="./departments/ba.html">Business Administration</a></li>
+              <li><a class="dropdown-item" href="./departments/eng.html">English Language & LIT</a></li>
+              <li><a class="dropdown-item" href="./departments/com.html">Commerce</a></li>
+              <li><a class="dropdown-item" href="./departments/law.html">Law</a></li>
+            </ul>
+          </div></li>
+        </ul>
+      </header>
+    </div>
+
+
+
+
+
+
+    <section class="about-section" style="background-image: url(./assets/images/pugc.png); ">
+        <h1>About Us</h1>
+        <p>It is for the first time in 124 year history of the Punjab University that it has established a teaching campus outside Lahore. Gujranwala Campus has been established with the keen interest & support of the Honourable & Worthy Vice-Chancellor. The opening of the sub-campus is in accordance with the educational policy of the present regime of President Islamic Republic of Pakistan, who is taking a keen interest in promoting education. Gujranwala campus is located near Alipur Chowk, Rawalpindi By-pass. It has an area of 81 Kanals. It has 37 classrooms, 1 Administration block, fully air-conditioned and open shelves library, 1 big multi-purpose hall and allied facilities i.e. Car Parking, Canteen, Book Shop, and Grassy Lawns.</p>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="contact-section container"> 
+        <h2>Administration</h2>
+        <div class="row">
+            <!-- Contact 1 -->
+             
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/a1.png" alt="Umair Ali">
+                    <div class="contact-info">
+                        <h5>Mr. Umair Ali</h5>
+                        <p>Deputy Registrar</p>
+                        <a href="mailto:umairali1948@hotmail.com">umairali1948@hotmail.com</a>
+                        <p>055-9201224</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/a2.png" alt="Imran Javed">
+                    <div class="contact-info">
+                        <h5>Mr. Imran Javed</h5>
+                        <p>Estate Officer</p>
+                        <a href="mailto:iman866@hotmail.com">iman866@hotmail.com</a>
+                        <p>+92 (0) 55 92 00 98 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/a3.png" alt="Akasha Waraich">
+                    <div class="contact-info">
+                        <h5>Mrs. Akasha Waraich</h5>
+                        <p>Asstt. Network Administrator</p>
+                        <a href="mailto:akasha_warraich@yahoo.com">akasha_warraich@yahoo.com</a>
+                        <p>+92 (0) 321 64 05 46 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/a4.png" alt="Muhammad Sajid Akhtar">
+                    <div class="contact-info">
+                        <h5>Muhammad Sajid Akhtar</h5>
+                        <p>Deputy Registrar</p>
+                        <a href="mailto:sajidakhtarr@pugc.edu.pk">sajidakhtarr@pugc.edu.pk</a>
+                        <p>055-9201227</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/a5.png" alt="Shazib Maqsood Butt">
+                    <div class="contact-info">
+                        <h5>Mr. Shazib Maqsood Butt</h5>
+                        <p>Admin. Officer</p>
+                        <a href="mailto:ursshazib@hotmail.com">ursshazib@hotmail.com</a>
+                        <p>055-9201225-26</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/a6.png" alt="Abrar Ahmad Khan">
+                    <div class="contact-info">
+                        <h5>Mr. Abrar Ahmad Khan</h5>
+                        <p>Network Administrator</p>
+                        <a href="mailto:na@pugc.edu.pk">na@pugc.edu.pk</a>
+                        <p>055-9201220</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/a7.png"alt="Muhammad Shahbaz Cheema">
+                    <div class="contact-info">
+                        <h5>Mr. Muhammad Shahbaz Cheema</h5>
+                        <p>PS to Director General</p>
+                        <p>Performing duties as Personal Secretary to Director General, PUGC.</p>
+                        <a href="mailto:shahbaz.cheema@pugc.edu.pk">shahbaz.cheema@pugc.edu.pk</a>
+                        <p>055-9201221</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <section class="contact-section container"> 
+        <h2>Faculty</h2>
+        <div class="row">
+            <!-- Contact 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/f1.png" alt="Prof. Dr. Naveed Iqbal Chaudhry">
+                    <div class="contact-info">
+                        <h5>Prof. Dr. Naveed Iqbal Chaudhry</h5>
+                        <p>Professor</p>
+                        <a href="mailto:naveed.iqbal@pugc.edu.pk">naveed.iqbal@pugc.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/f2.png" alt="Dr. Naveed Ahmad Jhamat">
+                    <div class="contact-info">
+                        <h5>Dr. Naveed Ahmad Jhamat</h5>
+                        <p>Incharge / Assistant Professor</p>
+                        <p>Ph.D in Bioinformatics from SLU, Uppsala, Sweden</p>
+                        <a href="mailto:naveed.jhamat@pugc.edu.pk">naveed.jhamat@pugc.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/f3.png" alt="Dr. Salman Naseer">
+                    <div class="contact-info">
+                        <h5>Dr. Salman Naseer</h5>
+                        <p>Assistant Professor</p>
+                        <p>Ph.D in Computer and Information Sciences, Auckland, New Zealand</p>
+                        <a href="mailto:salman@pugc.edu.pk">salman@pugc.edu.pk</a>
+                        <p>+923338201017</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/f4.png" alt="Mr. Amer Sohail">
+                    <div class="contact-info">
+                        <h5>Mr. Amer Sohail</h5>
+                        <p>Incharge / Assistant Professor</p>
+                        <p>M.Phil (Management Sciences), Ph.D (Scholar)</p>
+                        <a href="mailto:amer.sohail@pugc.edu.pk">amer.sohail@pugc.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/f5.png" alt="Dr. Ghulam Mustafa">
+                    <div class="contact-info">
+                        <h5>Dr. Ghulam Mustafa</h5>
+                        <p>Assistant Professor</p>
+                        <p>Ph.D (BIT, China)</p>
+                        <a href="mailto:gmustafa@pugc.edu.pk">gmustafa@pugc.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/f6.png" alt="Miss Farhana Aziz Rana">
+                    <div class="contact-info">
+                        <h5>Miss Farhana Aziz Rana</h5>
+                        <p>Incharge / Assistant Professor in Department of Law</p>
+                        <a href="#">[Website]</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/f7.png" alt="Mr. Muhammad Younas">
+                    <div class="contact-info">
+                        <h5>Mr. Muhammad Younas</h5>
+                        <p>Assistant Professor</p>
+                        <p>M.S (Computer Science)</p>
+                        <a href="mailto:younas100@yahoo.com">younas100@yahoo.com</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/f8.png" alt="Mr. Zeeshan Arshad">
+                    <div class="contact-info">
+                        <h5>Mr. Zeeshan Arshad</h5>
+                        <p>Lecturer</p>
+                        <p>PhD (Scholar) - On Study Leave</p>
+                        <p>M.S (CS), M.SC. (IT)</p>
+                        <a href="mailto:Zeeshan.arshad@pugc.edu.pk">Zeeshan.arshad@pugc.edu.pk</a>
+                        <p>+92 332 8159859</p>
+                        <a href="#">[Website]</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center p-4">
+                    <img src="./assets/images/f9.png" alt="Miss Aadila Hussain">
+                    <div class="contact-info">
+                        <h5>Miss Aadila Hussain</h5>
+                        <p>Incharge / Lecturer</p>
+                        <p>M.Phil. (Linguistics), Ph.D (Scholar)</p>
+                        <a href="mailto:aadilahussain12@gmail.com">aadilahussain12@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+ <!-- Contact Us Section -->
+<section class="contact-us-section">
+    <h2>Contact Us</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contact-info">
+                <p>Address: Near Ali Pur Chowk Rawalpindi Bypass Gujranwala, Pakistan.</p>
+                <p>Email: <a href="mailto:infocell@pu.edu.pk">infocell@pu.edu.pk</a></p>
+                <p>Phone: +92 (0) 55 92 01 22 2</p>
+                <p>Office hours: Monday - Friday: 08:00 AM - 06:00 PM</p>
+                <p>Sat - Sun: Closed</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.074977597487!2d74.18630601496796!3d32.15986608111868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391faef05e68fd41%3A0x168c0638a7715f4a!2sPunjab%20University%20Gujranwala%20Campus!5e0!3m2!1sen!2sus!4v1635393309032!5m2!1sen!2sus"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+     
+     
+     
+
+
+
+
+    <footer class="py-5"  >
+        <div class="container"  >
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">News</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Subscription</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Events</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gallery</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Programs</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Merit-lists Afternoon</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Reserved-Lists LLB(Hons)</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sport Society</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SampleTests</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">MPhilADV</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">CCPC</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">OverSeas</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sports</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Key-Note Speakers</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Reserved 2024</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top" >
+            <p>2024 © University of the Punjab, Gujranwala Campus. All Rights Reserved.</p>
+            <ul class="list-unstyled d-flex">
+              
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="./assets/images/facebook.svg" alt=""></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="./assets/images/instagram.svg" alt=""></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="./assets/images/twitter.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+
+  
+</body>
+
+</html>
